@@ -12,7 +12,7 @@ int main()
     a.open("output.txt");
     cout << "Введите ваше имя и фамилию: " << endl;
     cin >> b >> c;
-    cout << "Какой Ваш любимый фильм?" << endl;
+    cout << "Какую книгу вы можете посоветовать?" << endl;
     cin>>d;
     a<<b<<' '<<c<<endl;
     a<<d;
