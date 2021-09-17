@@ -17,4 +17,12 @@ int main()
     a<<b<<' '<<c<<endl;
     a<<d;
     a.close();
+
+    char m[100];
+    char n[100];
+    ifstream j;
+    j.open("opros.txt");
+    j.getline(m, 100);
+    cout << m;
+    cin >>n;
 }
