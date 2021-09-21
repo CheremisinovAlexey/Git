@@ -36,6 +36,18 @@ int main()
         cout << "Пожалуйста, введите в ответе цифру 1 или 2" << endl;
     }
     }
+    char b[100];
+    char c[100];
+    a.open("input.txt");
+    a.getline(b, 100);
+    cout<<b<<endl;
+    cin>>c;
 
-
+    char m[100];
+    char n[100];
+    ifstream j;
+    j.open("opros.txt");
+    j.getline(m, 100);
+    cout << m;
+    cin >>n;
 }
