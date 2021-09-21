@@ -50,4 +50,8 @@ int main()
     j.getline(m, 100);
     cout << m;
     cin >>n;
+<<<<<<< HEAD
+=======
+
+>>>>>>> Kolichestvo
 }
