@@ -52,7 +52,6 @@ int main()
                 while (in.getline(line, 100))
                 {
                     std::cout << line << std::endl;
-                    x += 1;
                 }
             }
             in.close();
@@ -62,5 +61,4 @@ int main()
             cout << "Пожалуйста, введите в ответе цифру 1 или 2" << endl;
         }
     }
-    cout << "Количество прошедших опрос и количество различных книг: " << x << endl;
 }
