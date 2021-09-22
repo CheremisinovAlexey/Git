@@ -12,14 +12,14 @@ int main()
     SetConsoleOutputCP(1251);
     ifstream a;
     ofstream l;
-    int q, x;
-    x = 0;
+    int q;
     while (q != 1 & q != 2)
     {
         cout << "Провести опрос или выдать сохраненные результаты? " << endl;
         cin >> q;
         if (q == 1)
         {
+            string e;
             char m[100];
             string n;
             string k;
@@ -28,19 +28,12 @@ int main()
             l.open("output.txt", std::ios::app);
             j.getline(m, 100);
             cout << m << endl;
-            cin >> n;
-            cin >> k;
-            l << n << ' ' << k << endl;
+            getline(cin, n);
+            getline(cin, e);
+            l << n << endl;
 
             std::string line;
             std::ifstream in("output.txt");
-            if (in.is_open())
-            {
-                while (getline(in, line))
-                {
-                    x += 1;
-                }
-            }
             in.close();
         }
         else if (q == 2)
